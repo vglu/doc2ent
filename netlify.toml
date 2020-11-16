@@ -5,10 +5,10 @@
 [build]
   publish = "public"
   # command = "cd themes/docsy && git submodule update -f --init && cd ../../.. && hugo"
-  command = "git submodule update -f --init && npm install -D --save postcss-cli && npm install -D --save postcss && hugo"
+  command = "ls -la && git submodule update -f --init && npm install -D --save postcss-cli && npm install -D --save postcss && hugo"
 
 # "production" environment specific build settings
 [build.environment]
-  HUGO_VERSION = "0.55.6"
+  HUGO_VERSION = "0.78.2"
   HUGO_THEME = "docsy"
   HUGO_ENV = "production"

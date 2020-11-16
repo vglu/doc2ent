@@ -4,7 +4,7 @@
 # Default build settings
 [build]
   publish = "public"
-  command = "git submodule update -f --init && npm init -y && npm install postcss-cli && hugo --gc --minify"
+  command = "git submodule update -f --init && npm init -y && npm install postcss-cli && cd .. && cd .. && hugo --gc --minify"
 
 # "production" environment specific build settings
 [build.environment]

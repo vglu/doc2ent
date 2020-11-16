@@ -3,8 +3,8 @@
 
 # Default build settings
 [build]
-  publish = "doc2ent/public"
-  command = "git submodule update -f --init && cd doc2ent && npm init -y && npm install postcss-cli && hugo --themesDir ../.."
+  publish = "public"
+  command = "git submodule update -f --init && npm init -y && npm install postcss-cli && hugo --gc --minify"
 
 # "production" environment specific build settings
 [build.environment]

@@ -79,10 +79,6 @@ id = "UA-00000000-0"
 # Everything below this are Site Params
 
 [[menu.main]]
-    name = "About"
-    weight = 10
-    url = "about/"
-[[menu.main]]
     name = "News"
     weight = 20
     url = "news/"

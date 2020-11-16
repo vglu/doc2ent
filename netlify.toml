@@ -5,7 +5,7 @@
 [build]
   publish = "public"
   # command = "cd themes/docsy && git submodule update -f --init && cd ../../.. && hugo"
-  command = "cd themes/docsy && git submodule update -f --init && cd ../.. && npm init -y && npm install -D --save postcss-cli && npm install -D --save postcss && ls -la && hugo"
+  command = "cd themes/docsy && git submodule update -f --init && cd ../.. && npm init -y && npm install -D --save autoprefixer && npm install -D --save postcss-cli && npm install -D --save postcss && ls -la && hugo"
 
 # "production" environment specific build settings
 [build.environment]

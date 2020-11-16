@@ -1,0 +1,82 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>D365FO - make integration easy – Labels</title>
+    <link>https://romantic-ritchie-fcede1.netlify.app/docs/88-labels/</link>
+    <description>Recent content in Labels on D365FO - make integration easy</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	  <atom:link href="https://romantic-ritchie-fcede1.netlify.app/docs/88-labels/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Docs: EN-US Labels</title>
+      <link>https://romantic-ritchie-fcede1.netlify.app/docs/88-labels/en-us/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://romantic-ritchie-fcede1.netlify.app/docs/88-labels/en-us/</guid>
+      <description>
+        
+        
+        &lt;h1 id=&#34;labels-for-en-us-language&#34;&gt;Labels for EN-US language&lt;/h1&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Label file&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;sys/&#34;&gt;sys&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;syp/&#34;&gt;syp&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;Tax_HUOnlineInvoicing/&#34;&gt;Tax_HUOnlineInvoicing&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: FR Labels</title>
+      <link>https://romantic-ritchie-fcede1.netlify.app/docs/88-labels/fr/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://romantic-ritchie-fcede1.netlify.app/docs/88-labels/fr/</guid>
+      <description>
+        
+        
+        &lt;h1 id=&#34;labels-for-fr-language&#34;&gt;Labels for FR language&lt;/h1&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Label file&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;sys/&#34;&gt;sys&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;syp/&#34;&gt;syp&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;Tax_HUOnlineInvoicing/&#34;&gt;Tax_HUOnlineInvoicing&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

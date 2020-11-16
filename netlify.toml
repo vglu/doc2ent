@@ -4,10 +4,11 @@
 # Default build settings
 [build]
   publish = "public"
-  command = "cd themes/docsy && git submodule update -f --init && cd ../../.. && hugo"
+  # command = "cd themes/docsy && git submodule update -f --init && cd ../../.. && hugo"
+  command = "git submodule update -f --init && hugo"
 
 # "production" environment specific build settings
 [build.environment]
   HUGO_VERSION = "0.55.6"
-  HUGO_THEME = "repo"
+  HUGO_THEME = "docsy"
   HUGO_ENV = "production"

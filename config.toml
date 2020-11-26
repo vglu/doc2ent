@@ -10,11 +10,11 @@ enableRobotsTXT = true
 enableGitInfo = true
 
 # Language settings
-# contentDir = "content/en"
-#defaultContentLanguage = "en"
-# defaultContentLanguageInSubdir = false
+contentDir = "content/en"
+defaultContentLanguage = "en"
+defaultContentLanguageInSubdir = true
 # Useful when translating.
-# enableMissingTranslationPlaceholders = true
+enableMissingTranslationPlaceholders = true
 
 # disableKinds = ["taxonomy", "taxonomyTerm"]
 

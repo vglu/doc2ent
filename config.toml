@@ -4,6 +4,8 @@ title = "D365FO - make integration easy"
 # theme = 'hugo-geekdoc'
 theme = "docsy"
 
+disqusShortname = "doc2ent"
+
 enableRobotsTXT = true
 
 # Will give values to .Lastmod etc.

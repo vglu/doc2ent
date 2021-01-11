@@ -3,6 +3,7 @@ title: "Create Ledger journal"
 date: 2020-11-15
 tags:
   - LedgerJournalEntity
+weight: 1
 ---
 
 Для создания записи в журнале ГК [LedgerJournalEntity](LedgerJournalEntity) необходимо создать записи в энтити LedgerJournalEntity.

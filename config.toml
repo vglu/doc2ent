@@ -85,7 +85,7 @@ id = "UA-00000000-0"
     weight = 20
     url = "news/"
 [[menu.main]]
-    name = "Usefull"
+    name = "Useful"
     weight = 40
     url = "community/"
 [[menu.main]]
@@ -128,10 +128,10 @@ github_project_repo = "https://github.com/vglu/doc2ent"
 # github_subdir = ""
 
 # Google Custom Search Engine ID. Remove or comment out to disable search.
-gcs_engine_id = "9683d534e4d40201e"
+#gcs_engine_id = "9683d534e4d40201e"
 
 # Enable Algolia DocSearch
-algolia_docsearch = false
+algolia_docsearch = true
 
 # Enable Lunr.js offline search
 offlineSearch = false

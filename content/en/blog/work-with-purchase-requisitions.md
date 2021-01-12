@@ -6,7 +6,7 @@ tags:
 tables:
   - PurchReqTable
   - PurchReqLine
-Entitys: 
+Entities: 
   - PurchaseRequisitionHeaderV2Entity
   - PurchaseRequisitionLineEntity
 AXPath: Procurement and soursing\Purchase orders\Purchase requisitions
@@ -18,13 +18,13 @@ Operations:
 weight: 1
 ---
 
-Entity is allowed to operate with Purchase requisitions in D365FO.
+Entities is allowed to operate with Purchase requisitions in D365FO.
 
 Need to be sure, that integration person should be in list who can create this document otherwise we have got error.
 
 ## Header PurchReqTable/PurchaseRequisitionHeaderV2Entity
 
-To works with PurchReqTable we want to use PurchaseRequisitionHeaderV2Entity entity
+To works with PurchReqTable we want to use `PurchaseRequisitionHeaderV2Entity` entity
 
 ### Key
 
@@ -65,7 +65,7 @@ OData-MaxVersion:4.0
 Content-Type:application/json;odata.metadata=minimal
 Accept:application/json;odata.metadata=minimal
 Accept-Charset:UTF-8
-Authorization:Bearer *
+Authorization:Bearer {{token}}
 Host:{{base_url}}
 ```
 
@@ -113,7 +113,7 @@ OData-MaxVersion:4.0
 Content-Type:application/json;odata.metadata=minimal
 Accept:application/json;odata.metadata=minimal
 Accept-Charset:UTF-8
-Authorization:Bearer *
+Authorization:Bearer {{token}}
 Host:{{base_url}}
 ```
 
@@ -176,7 +176,7 @@ OData-MaxVersion:4.0
 Content-Type:application/json;odata.metadata=minimal
 Accept:application/json;odata.metadata=minimal
 Accept-Charset:UTF-8
-Authorization:Bearer *
+Authorization:Bearer {{token}}
 Host:{{base_url}}
 ```
 
@@ -219,7 +219,7 @@ OData-MaxVersion:4.0
 Content-Type:application/json;odata.metadata=minimal
 Accept:application/json;odata.metadata=minimal
 Accept-Charset:UTF-8
-Authorization:Bearer *
+Authorization:Bearer {{token}}
 Host:{{base_url}}
 ```
 
@@ -234,7 +234,7 @@ Status: 204
 
 ## Header PurchReqLine/PurchaseRequisitionLineEntity
 
-To works with PurchReqTable we want to use PurchaseRequisitionLines entity
+To works with PurchReqTable we want to use `PurchaseRequisitionLines` entity
 
 ### Key
 
@@ -344,7 +344,7 @@ OData-MaxVersion:4.0
 Content-Type:application/json;odata.metadata=minimal
 Accept:application/json;odata.metadata=minimal
 Accept-Charset:UTF-8
-Authorization:Bearer *
+Authorization:Bearer {{token}}
 Host:{{base_url}}
 ```
 
@@ -460,7 +460,7 @@ OData-MaxVersion:4.0
 Content-Type:application/json;odata.metadata=minimal
 Accept:application/json;odata.metadata=minimal
 Accept-Charset:UTF-8
-Authorization:Bearer *
+Authorization:Bearer {{token}}
 Host:{{base_url}}
 ```
 
@@ -596,7 +596,7 @@ OData-MaxVersion:4.0
 Content-Type:application/json;odata.metadata=minimal
 Accept:application/json;odata.metadata=minimal
 Accept-Charset:UTF-8
-Authorization:Bearer *
+Authorization:Bearer {{token}}
 Host:{{base_url}}
 ```
 
@@ -638,7 +638,7 @@ OData-MaxVersion:4.0
 Content-Type:application/json;odata.metadata=minimal
 Accept:application/json;odata.metadata=minimal
 Accept-Charset:UTF-8
-Authorization:Bearer *
+Authorization:Bearer {{token}}
 Host:{{base_url}}
 ```
 
@@ -653,9 +653,10 @@ Status: 204
 
 ## Create Document Purchase requisitions
 
-Need to allow Purchase requsition number sequence be changed by user
+Need to allowed Purchase requsition number sequence be changed by user
 
 ALLOW USER CHANGES
+
 - To a lower number = YES
 - To a higher number = YES
 
@@ -989,4 +990,3 @@ OData-Version: 4.0
 ```
 
 </details>
-

@@ -5,7 +5,7 @@ tags:
   - InventLocation
 tables:
   - InventLocation
-Entitys: 
+Entities: 
   - Warehouses
 AXPath: Warehouse management\Setup\Warehouse\Warehouses
 Operations:
@@ -16,7 +16,7 @@ Operations:
 weight: 1
 ---
 
-Entity is allowed to operate with warehowses in D365FO.
+`Warehouses` Entity is allowed to operate with warehowses in D365FO.
 
 ## Key
 
@@ -116,7 +116,7 @@ OData-MaxVersion:4.0
 Content-Type:application/json;odata.metadata=minimal
 Accept:application/json;odata.metadata=minimal
 Accept-Charset:UTF-8
-Authorization:Bearer *
+Authorization:Bearer {{token}}
 Host:{{base_url}}
 ```
 
@@ -222,7 +222,7 @@ OData-MaxVersion:4.0
 Content-Type:application/json;odata.metadata=minimal
 Accept:application/json;odata.metadata=minimal
 Accept-Charset:UTF-8
-Authorization:Bearer *
+Authorization:Bearer {{token}}
 Host:{{base_url}}
 ```
 
@@ -344,7 +344,7 @@ Response:
     Content-Type:application/json;odata.metadata=minimal
     Accept:application/json;odata.metadata=minimal
     Accept-Charset:UTF-8
-    Authorization:Bearer *
+    Authorization:Bearer {{token}}
     Host:{{base_url}}
 ```
 
@@ -386,7 +386,7 @@ OData-MaxVersion:4.0
 Content-Type:application/json;odata.metadata=minimal
 Accept:application/json;odata.metadata=minimal
 Accept-Charset:UTF-8
-Authorization:Bearer *
+Authorization:Bearer {{token}}
 Host:{{base_url}}
 ```
 

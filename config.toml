@@ -83,11 +83,15 @@ id = "UA-00000000-0"
 [[menu.main]]
     name = "News"
     weight = 20
-    url = "news/"
+    url = "blog/"
 [[menu.main]]
     name = "Useful"
-    weight = 40
+    weight = 30
     url = "community/"
+[[menu.main]]
+    name = "Cases"
+    weight = 40
+    url = "cases/"
 [[menu.main]]
     name = "Documentation"
     weight = 50

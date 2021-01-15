@@ -89,7 +89,7 @@ Response:
 
 ```json
 {
-    "@odata.context": "https://dev10plus15065719449a0027478devaos.cloudax.dynamics.com/data/$metadata#OperationalSites/$entity",
+    "@odata.context": "https://{{base_url}}/data/$metadata#OperationalSites/$entity",
     "@odata.etag": "W/\"JzAsMjI1NjU0MjE2NzY7MCwyMjU2NTQyMTQyNjswLDA7MCwyMjU2NTQyNjk4OSc=\"",
     "dataAreaId": "usmf",
     "SiteId": "1",
@@ -170,7 +170,7 @@ Host:{{base_url}}
 
 ```json
 {
-    "@odata.context": "https://dev10plus15065719449a0027478devaos.cloudax.dynamics.com/data/$metadata#OperationalSites/$entity",
+    "@odata.context": "https://{{base_url}}/data/$metadata#OperationalSites/$entity",
     "@odata.etag": "W/\"JzEsNjg3MTk0NzkwMjg7MSw2ODcxOTQ3OTAyOTswLDA7MCwwJw==\"",
     "dataAreaId": "usmf",
     "SiteId": "A2",

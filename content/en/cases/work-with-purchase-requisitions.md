@@ -18,7 +18,7 @@ Operations:
 weight: 1
 ---
 
-Entities is allowed to operate with Purchase requisitions in D365FO.
+Entities `PurchaseRequisitionHeaderV2Entity` and `PurchaseRequisitionLineEntity` are allowed to operate with Purchase requisitions in D365FO.
 
 Need to be sure, that integration person should be in list who can create this document otherwise we have got error.
 
@@ -232,7 +232,7 @@ Response:
 Status: 204
 </details>
 
-## Header PurchReqLine/PurchaseRequisitionLineEntity
+## Lines PurchReqLine/PurchaseRequisitionLineEntity
 
 To works with PurchReqTable we want to use `PurchaseRequisitionLines` entity
 
@@ -653,7 +653,7 @@ Status: 204
 
 ## Create Document Purchase requisitions
 
-Need to allowed Purchase requsition number sequence be changed by user
+Need to allowed `Purchase requsition` number sequence be changed by user
 
 ALLOW USER CHANGES
 
@@ -702,7 +702,7 @@ Accept-Charset: UTF-8
 
 {
     "@odata.type":"#Microsoft.Dynamics.DataEntities.PurchaseRequisitionHeader",
-    "RequisitionName":     "Sara Thomas",
+    "RequisitionName": "Sara Thomas",
     "RequisitionNumber": "A00001"
 }
 

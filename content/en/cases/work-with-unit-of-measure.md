@@ -68,7 +68,7 @@ Response:
 
 ```json
 {
-    "@odata.context": "https://dev10plus15065719449a0027478devaos.cloudax.dynamics.com/data/$metadata#UnitsOfMeasure/$entity",
+    "@odata.context": "https://{{base_url}}/data/$metadata#UnitsOfMeasure/$entity",
     "@odata.etag": "W/\"JzAsMjI1NjU0MjExOTk7MCwyMjU2NTQyMTE5ODswLDA7MCw1NjM3MTQ0NTg1OzAsMCc=\"",
     "UnitSymbol": "ea",
     "IsFixedUnitSymbolAssigned": "No",
@@ -127,7 +127,7 @@ Host:{{base_url}}
 
 ```json
 {
-    "@odata.context": "https://dev10plus15065719449a0027478devaos.cloudax.dynamics.com/data/$metadata#UnitsOfMeasure/$entity",
+    "@odata.context": "https://{{base_url}}/data/$metadata#UnitsOfMeasure/$entity",
     "@odata.etag": "W/\"JzEsNjg3MTk0Nzc2MTY7MCwwOzAsMDswLDA7MCwwJw==\"",
     "UnitSymbol": "bit",
     "IsFixedUnitSymbolAssigned": "No",

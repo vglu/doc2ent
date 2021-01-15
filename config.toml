@@ -92,10 +92,10 @@ id = "UA-00000000-0"
     name = "Cases"
     weight = 40
     url = "cases/"
-[[menu.main]]
-    name = "Documentation"
-    weight = 50
-    url = "docs/"
+#[[menu.main]]
+#    name = "Documentation"
+#    weight = 50
+#    url = "docs/"
 
 
 [params]

@@ -73,7 +73,7 @@ Response:
 
 ```json
 {
-    "@odata.context": "https://dev10plus15065719449a0027478devaos.cloudax.dynamics.com/data/$metadata#Currencies/$entity",
+    "@odata.context": "https://{{base_url}}/data/$metadata#Currencies/$entity",
     "@odata.etag": "W/\"JzAsNTYzNzE0NDczMDswLDU2MzcxNDQ3MzAn\"",
     "CurrencyCode": "USD",
     "RoundingMethodPurchaseOrders": "Ordinary",
@@ -137,7 +137,7 @@ Host:{{base_url}}
 
 ```json
 {
-    "@odata.context": "https://dev10plus15065719449a0027478devaos.cloudax.dynamics.com/data/$metadata#Currencies/$entity",
+    "@odata.context": "https://{{base_url}}/data/$metadata#Currencies/$entity",
     "@odata.etag": "W/\"JzAsNTYzNzE0NDU3NzswLDU2MzcxNDQ1Nzcn\"",
     "CurrencyCode": "AFN",
     "RoundingMethodPurchaseOrders": "Ordinary",

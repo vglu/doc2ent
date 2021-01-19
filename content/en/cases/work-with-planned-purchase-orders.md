@@ -17,6 +17,10 @@ Operations:
 weight: 1
 ---
 
+| Data entity AOT name  | Entity name (DMF) | Public collection name (OData) | Support OData | Support DMF | Category | ReadOnly |
+| --------------------- | ----------------- | ------------------------------ | ------------- | ----------- | -------- | -------- |
+| ReqPlannedOrderEntity | Planned orders    | PlannedOrders                  | Yes           | Yes         | Document | YES      |
+
 `PlannedOrders` Entity is allowed to operate with planned purchase orders in D365FO.
 
 __ENTITY IS READONLY!__

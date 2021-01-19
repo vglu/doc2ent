@@ -22,7 +22,11 @@ Entities `PurchaseRequisitionHeaderV2Entity` and `PurchaseRequisitionLineEntity`
 
 Need to be sure, that integration person should be in list who can create this document otherwise we have got error.
 
-## Header PurchReqTable/PurchaseRequisitionHeaderV2Entity
+## Header PurchaseRequisitionHeaderV2Entity
+
+| Data entity AOT name              | Entity name (DMF)        | Public collection name (OData) | Support OData | Support DMF | Category | ReadOnly |
+| --------------------------------- | ------------------------ | ------------------------------ | ------------- | ----------- | -------- | -------- |
+| PurchaseRequisitionHeaderV2Entity | Purchase requisitions V2 | PurchaseRequisitionHeaders     | Yes           | Yes         | Document | No       |
 
 To works with PurchReqTable we want to use `PurchaseRequisitionHeaderV2Entity` entity
 
@@ -232,7 +236,11 @@ Response:
 Status: 204
 </details>
 
-## Lines PurchReqLine/PurchaseRequisitionLineEntity
+## Lines PurchaseRequisitionLineEntity
+
+| Data entity AOT name          | Entity name (DMF)          | Public collection name (OData) | Support OData | Support DMF | Category | ReadOnly |
+| ----------------------------- | -------------------------- | ------------------------------ | ------------- | ----------- | -------- | -------- |
+| PurchaseRequisitionLineEntity | Purchase requisition lines | PurchaseRequisitionLines       | Yes           | Yes         | Document | No       |
 
 To works with PurchReqTable we want to use `PurchaseRequisitionLines` entity
 
@@ -318,7 +326,7 @@ To works with PurchReqTable we want to use `PurchaseRequisitionLines` entity
 | BusinessJustificationCode           | "General"                                                                                    |             |
 | ProcurementProductCategoryName      | "Computers"                                                                                  |             |
 | DeliveryAddressStreetNumber         | ""                                                                                           |             |
-| (*)__CurrencyCode__                        | "USD"                                                                                        |             |
+| (*)__CurrencyCode__                 | "USD"                                                                                        |             |
 | DeliveryAddressLongitude            | 0                                                                                            |             |
 | FixedAssetGroupId                   | ""                                                                                           |             |
 | DefaultLedgerDimensionDisplayValue  | "001--"                                                                                      |             |

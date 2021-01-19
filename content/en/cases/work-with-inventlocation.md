@@ -16,6 +16,10 @@ Operations:
 weight: 1
 ---
 
+| Data entity AOT name  | Entity name (DMF) | Public collection name (OData) | Support OData | Support DMF | Category | ReadOnly |
+| --------------------- | ----------------- | ------------------------------ | ------------- | ----------- | -------- | -------- |
+| InventWarehouseEntity | Warehouses        | Warehouses                     | Yes           | Yes         | Master   | No       |
+
 `Warehouses` Entity is allowed to operate with warehowses in D365FO.
 
 ## Key

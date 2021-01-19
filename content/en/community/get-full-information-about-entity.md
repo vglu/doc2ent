@@ -1,7 +1,8 @@
 ---
 title: "Get Full Information About Entity"
 date: 2021-01-15T11:44:22+02:00
-draft: true
+draft: false
+
 ---
 
 The completeness of the entity information depends of parameter on request header.

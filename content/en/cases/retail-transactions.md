@@ -4,6 +4,7 @@ date: 2020-11-13
 tags:
   - LedgerJournalEntity
 weight: 1
+draft: true
 ---
 
 Для создания ретейл используются дата энтити .... список ...

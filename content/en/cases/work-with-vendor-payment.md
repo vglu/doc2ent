@@ -4,11 +4,11 @@ date: 2021-01-15
 tags:
   - Vendor payment journal
 tables:
-  - PurchReqTable
-  - PurchReqLine
+  - LedgerJournalTable
+  - LedgerJournalTrans
 Entities: 
-  - PurchaseRequisitionHeaderV2Entity
-  - PurchaseRequisitionLineEntity
+  - VendorPaymentJournalHeaderEntity
+  - VendorPaymentJournalLineEntity
 AXPath: Accounts payable\Payments\Vendor payment journal
 Operations:
   - Read
@@ -26,7 +26,7 @@ Entities is allowed to operate with Vendor payment journal in D365FO.
 | -------------------------------- | ----------------------------- | ------------------------------ | ------------- | ----------- | -------- | -------- |
 | VendorPaymentJournalHeaderEntity | Vendor payment journal header | VendorPaymentJournalHeaders    | Yes           | Yes         | Document | No       |
 
-[comment]: < FIXME: To works with PurchReqTable we want to use `VendorPaymentJournalHeaderEntity` entity >
+[comment]: < FIXME: To works with `Vendor payment journal header` we want to use `VendorPaymentJournalHeaderEntity` entity >
 
 ### Key
 
@@ -95,7 +95,7 @@ Response:
 
 #### Request for create data
 
-`POST : https://{{base_url}}/data/PurchaseRequisitionHeaders`
+`POST : https://{{base_url}}/data/VendorPaymentJournalHeaders`
 
 <details>
     <summary>
@@ -136,7 +136,7 @@ Response:
 
 ```json
 {
-    "@odata.context": "https://dev10plus15065719449a0027478devaos.cloudax.dynamics.com/data/$metadata#VendorPaymentJournalHeaders/$entity",
+    "@odata.context": "https://{{base_url}}/data/$metadata#VendorPaymentJournalHeaders/$entity",
     "@odata.etag": "W/\"JzEsNjg3MTk1MTE1MTE7MCwwJw==\"",
     "dataAreaId": "usmf",
     "JournalBatchNumber": "00629",
@@ -228,7 +228,7 @@ Status: 204
 | ------------------------------ | --------------------------- | ------------------------------ | ------------- | ----------- | -------- | -------- |
 | VendorPaymentJournalLineEntity | Vendor payment journal line | VendorPaymentJournalLines      | Yes           | Yes         | Document | No       |
 
-To works with PurchReqTable we want to use `VendorPaymentJournalLines` entity
+To works with `Vendor payment journal line` we want to use `VendorPaymentJournalLines` entity
 
 ### Key
 
@@ -364,7 +364,7 @@ Response:
 
 ```json
 {
-    "@odata.context": "https://dev10plus15065719449a0027478devaos.cloudax.dynamics.com/data/$metadata#VendorPaymentJournalLines/$entity",
+    "@odata.context": "https://{{base_url}}/data/$metadata#VendorPaymentJournalLines/$entity",
     "@odata.etag": "W/\"JzAsNTYzNzE3MTUyODswLDA7MCwwOzAsMDswLDA7MCwwJw==\"",
     "dataAreaId": "usmf",
     "JournalBatchNumber": "00282",
@@ -466,7 +466,7 @@ Response:
 
 #### Request for create data
 
-`POST: https://{{base_url}}/data/PurchaseRequisitionLines`
+`POST: https://{{base_url}}/data/VendorPaymentJournalLines`
 
 <details>
     <summary>
@@ -509,7 +509,7 @@ Response:
 
 ```json
 {
-    "@odata.context": "https://dev10plus15065719449a0027478devaos.cloudax.dynamics.com/data/$metadata#VendorPaymentJournalLines/$entity",
+    "@odata.context": "https://{{base_url}}/data/$metadata#VendorPaymentJournalLines/$entity",
     "@odata.etag": "W/\"JzEsNjg3MTk1ODM3OTI7MCwwOzAsMDswLDA7MCwwOzAsMCc=\"",
     "dataAreaId": "usmf",
     "JournalBatchNumber": "00630",
@@ -681,7 +681,7 @@ Response:
 Status: 204
 </details>
 
-## Create Document Purchase requisitions
+## Create Document Vendor Payment Journal
 
 Need to allowed `General ledger\Journal batch number` number sequence be changed by user
 
@@ -824,12 +824,12 @@ Content-ID: 1
 
 HTTP/1.1 201 Created
 ETag: W/"JzEsNjg3MTk1MTE1MjA7MCwwJw=="
-Location: https://dev10plus15065719449a0027478devaos.cloudax.dynamics.com/data/VendorPaymentJournalHeaders(dataAreaId='usmf',JournalBatchNumber='A0001')
+Location: https://{{base_url}}/data/VendorPaymentJournalHeaders(dataAreaId='usmf',JournalBatchNumber='A0001')
 Content-Type: application/json; odata.metadata=minimal
 OData-Version: 4.0
 
 {
-    "@odata.context": "https://dev10plus15065719449a0027478devaos.cloudax.dynamics.com/data/$metadata#VendorPaymentJournalHeaders/$entity",
+    "@odata.context": "https://{{base_url}}/data/$metadata#VendorPaymentJournalHeaders/$entity",
     "@odata.etag": "W/\"JzEsNjg3MTk1MTE1MjA7MCwwJw==\"",
     "dataAreaId": "usmf",
     "JournalBatchNumber": "A0001",
@@ -848,12 +848,12 @@ Content-ID: 2
 
 HTTP/1.1 201 Created
 ETag: W/"JzEsNjg3MTk1ODM3OTY7MCwwOzAsMDswLDA7MCwwOzAsMCc="
-Location: https://dev10plus15065719449a0027478devaos.cloudax.dynamics.com/data/VendorPaymentJournalLines(dataAreaId='usmf',JournalBatchNumber='A0001',LineNumber=1)
+Location: https://{{base_url}}/data/VendorPaymentJournalLines(dataAreaId='usmf',JournalBatchNumber='A0001',LineNumber=1)
 Content-Type: application/json; odata.metadata=minimal
 OData-Version: 4.0
 
 {
-    "@odata.context": "https://dev10plus15065719449a0027478devaos.cloudax.dynamics.com/data/$metadata#VendorPaymentJournalLines/$entity",
+    "@odata.context": "https://{{base_url}}/data/$metadata#VendorPaymentJournalLines/$entity",
     "@odata.etag": "W/\"JzEsNjg3MTk1ODM3OTY7MCwwOzAsMDswLDA7MCwwOzAsMCc=\"",
     "dataAreaId": "usmf",
     "JournalBatchNumber": "A0001",
@@ -956,12 +956,12 @@ Content-ID: 3
 
 HTTP/1.1 201 Created
 ETag: W/"JzEsNjg3MTk1ODM3OTc7MCwwOzAsMDswLDA7MCwwOzAsMCc="
-Location: https://dev10plus15065719449a0027478devaos.cloudax.dynamics.com/data/VendorPaymentJournalLines(dataAreaId='usmf',JournalBatchNumber='A0001',LineNumber=2)
+Location: https://{{base_url}}/data/VendorPaymentJournalLines(dataAreaId='usmf',JournalBatchNumber='A0001',LineNumber=2)
 Content-Type: application/json; odata.metadata=minimal
 OData-Version: 4.0
 
 {
-    "@odata.context": "https://dev10plus15065719449a0027478devaos.cloudax.dynamics.com/data/$metadata#VendorPaymentJournalLines/$entity",
+    "@odata.context": "https://{{base_url}}/data/$metadata#VendorPaymentJournalLines/$entity",
     "@odata.etag": "W/\"JzEsNjg3MTk1ODM3OTc7MCwwOzAsMDswLDA7MCwwOzAsMCc=\"",
     "dataAreaId": "usmf",
     "JournalBatchNumber": "A0001",

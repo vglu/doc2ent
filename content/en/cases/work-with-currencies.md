@@ -16,6 +16,10 @@ Operations:
 weight: 1
 ---
 
+| Data entity AOT name | Entity name (DMF) | Public collection name (OData) | Support OData | Support DMF | Category  | ReadOnly |
+| -------------------- | ----------------- | ------------------------------ | ------------- | ----------- | --------- | -------- |
+| CurrencyEntity       | Currencies        | Currencies                     | Yes           | Yes         | Reference | No       |
+
 `CurrencyEntity` Entity is allowed to operate with warehowses in D365FO.
 
 ## Key

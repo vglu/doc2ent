@@ -1,5 +1,5 @@
 ---
-title: "Works with Vendor payment journals"
+title: "Using Vendor payment journal entities"
 date: 2021-01-15
 tags:
   - Vendor payment journal
@@ -18,7 +18,7 @@ Operations:
 weight: 1
 ---
 
-Entities is allowed to operate with Vendor payment journal in D365FO.
+2 entities are used to work with Vendor payment journal in D365FO.
 
 ## Header VendorPaymentJournalHeaderEntity
 
@@ -27,6 +27,7 @@ Entities is allowed to operate with Vendor payment journal in D365FO.
 | VendorPaymentJournalHeaderEntity | Vendor payment journal header | VendorPaymentJournalHeaders    | Yes           | Yes         | Document | No       |
 
 [comment]: < FIXME: To works with `Vendor payment journal header` we want to use `VendorPaymentJournalHeaderEntity` entity >
+`VendorPaymentJournalHeaderEntity` entity is used to work with `Vendor payment journal` header. 
 
 ### Key
 
@@ -228,7 +229,7 @@ Status: 204
 | ------------------------------ | --------------------------- | ------------------------------ | ------------- | ----------- | -------- | -------- |
 | VendorPaymentJournalLineEntity | Vendor payment journal line | VendorPaymentJournalLines      | Yes           | Yes         | Document | No       |
 
-To works with `Vendor payment journal line` we want to use `VendorPaymentJournalLines` entity
+`VendorPaymentJournalLines` entity is used to work with `Vendor payment journal` lines. 
 
 ### Key
 
@@ -684,7 +685,7 @@ Status: 204
 ## Create Document Vendor Payment Journal
 
 Need to allowed `General ledger\Journal batch number` number sequence be changed by user
-
+[comment]: TODO rewrite
 ALLOW USER CHANGES
 
 - To a lower number = YES

@@ -682,14 +682,11 @@ Response:
 Status: 204
 </details>
 
-## Create Document Vendor Payment Journal
+## Create vendor payment journal with lines
 
-Need to allowed `General ledger\Journal batch number` number sequence be changed by user
-[comment]: TODO rewrite
-ALLOW USER CHANGES
+Journal header and lines should be created within a transaction (batch request) and therefore number sequence `General ledger\Journal batch number` should allow user changes:
 
-- To a lower number = YES
-- To a higher number = YES
+![IMG](/cases/work-with-vendor-payment/st222vendpaymjour01.png.png)
 
 `POST : https://{{base_url}}/data/$batch`
 

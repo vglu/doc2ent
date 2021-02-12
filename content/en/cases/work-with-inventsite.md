@@ -1,5 +1,5 @@
 ---
-title: "Works with inventory site (Sites)"
+title: "Work with inventory site (Sites)"
 date: 2021-01-13
 tags:
   - InventSite

@@ -1,5 +1,5 @@
 ---
-title: "Works with inventory location (warehouse)"
+title: "Work with inventory location (warehouse)"
 date: 2021-01-10
 tags:
   - InventLocation

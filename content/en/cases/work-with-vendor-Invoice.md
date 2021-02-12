@@ -1,15 +1,15 @@
 ---
-title: "Work with Vendor payment journals"
-date: 2021-01-15
+title: Work with Vendor invoice
+date: 2021-01-20
 tags:
-  - Vendor payment journal
+  - Vendor invoice
 tables:
-  - LedgerJournalTable
-  - LedgerJournalTrans
+  - 1
+  - 2
 Entities: 
-  - VendorPaymentJournalHeaderEntity
-  - VendorPaymentJournalLineEntity
-AXPath: Accounts payable\Payments\Vendor payment journal
+  - VendInvoiceJournalHeaderEntity
+  - VendInvoiceJournalLineEntity
+AXPath: Accounts payable\Invoices\Invoice journal
 Operations:
   - Read
   - Create
@@ -18,15 +18,15 @@ Operations:
 weight: 1
 ---
 
-Entities is allowed to operate with Vendor payment journal in D365FO.
+Entities is allowed to operate with Vendor invoice in D365FO.
 
-## Header VendorPaymentJournalHeaderEntity
+## Header VendorInvoiceHeaderEntity
 
-| Data entity AOT name             | Entity name (DMF)             | Public collection name (OData) | Support OData | Support DMF | Category | ReadOnly |
-| -------------------------------- | ----------------------------- | ------------------------------ | ------------- | ----------- | -------- | -------- |
-| VendorPaymentJournalHeaderEntity | Vendor payment journal header | VendorPaymentJournalHeaders    | Yes           | Yes         | Document | No       |
+| Data entity AOT name           | Entity name (DMF)             | Public collection name (OData) | Support OData | Support DMF | Category | ReadOnly |
+| ------------------------------ | ----------------------------- | ------------------------------ | ------------- | ----------- | -------- | -------- |
+| VendInvoiceJournalHeaderEntity | Vendor invoice journal header | VendInvoiceJournalHeaders      | Yes           | Yes         | Document | No       |
 
-[comment]: < FIXME: To works with `Vendor payment journal header` we want to use `VendorPaymentJournalHeaderEntity` entity >
+[comment]: < FIXME: To works with `` we want to use `` entity >
 
 ### Key
 
@@ -35,23 +35,20 @@ Entities is allowed to operate with Vendor payment journal in D365FO.
 
 ### Fields
 
-| Field name         | Value example    | Description |
-| ------------------ | ---------------- | ----------- |
-| dataAreaId         | "usmf"           |             |
-| JournalBatchNumber | "00282"          |             |
-| (*)**JournalName** | "VendPay"        |             |
-| ChargeBearer       | 0                |             |
-| Description        | "Vendor Payment" |             |
-| CategoryPurpose    | 0                |             |
-| IsPosted           | "Yes"            |             |
-| LocalInstrument    | 0                |             |
-| ServiceLevel       | 0                |             |
+| Field name         | Value example | Description |
+| ------------------ | ------------- | ----------- |
+| dataAreaId         | "usmf"        |             |
+| JournalBatchNumber | "00461"       |             |
+| (*)**JournalName** | "APInvoice"   |             |
+| Description        | "AP Invoice"  |             |
+| IsPosted           | "Yes"         |             |
+| SalesTaxIncluded   | "No"          |             |
 
 ### Postman
 
 #### Request for get data
 
-`GET: https://{{base_url}}/data/VendorPaymentJournalHeaders(dataAreaId='usmf',JournalBatchNumber='00282')`
+`GET: https://{{base_url}}/data/VendInvoiceJournalHeaders(dataAreaId='usmf',JournalBatchNumber='00461')`
 
 <details>
     <summary>
@@ -77,17 +74,14 @@ Response:
 
 ```json
 {
-    "@odata.context": "https://{{base_url}}/data/$metadata#VendorPaymentJournalHeaders/$entity",
-    "@odata.etag": "W/\"JzAsMjI1NjU0MzMwODU7MCwwJw==\"",
+    "@odata.context": "https://dev10plus15065719449a0027478devaos.cloudax.dynamics.com/data/$metadata#VendInvoiceJournalHeaders/$entity",
+    "@odata.etag": "W/\"JzAsMjI1NjU0ODg4NzAn\"",
     "dataAreaId": "usmf",
-    "JournalBatchNumber": "00282",
-    "JournalName": "VendPay",
-    "ChargeBearer": 0,
-    "Description": "Vendor Payment",
-    "CategoryPurpose": 0,
+    "JournalBatchNumber": "00461",
+    "JournalName": "APInvoice",
+    "Description": "AP Invoice",
     "IsPosted": "Yes",
-    "LocalInstrument": 0,
-    "ServiceLevel": 0
+    "SalesTaxIncluded": "No"
 }
 ```
 
@@ -95,7 +89,7 @@ Response:
 
 #### Request for create data
 
-`POST : https://{{base_url}}/data/VendorPaymentJournalHeaders`
+`POST : https://{{base_url}}/data/VendInvoiceJournalHeaders`
 
 <details>
     <summary>
@@ -121,8 +115,8 @@ Host:{{base_url}}
 
 ```json
 {
-    "@odata.type":"#Microsoft.Dynamics.DataEntities.VendorPaymentJournalHeader",
-    "JournalName": "VendPay"
+    "@odata.type":"#Microsoft.Dynamics.DataEntities.VendInvoiceJournalHeader",
+    "JournalName": "APInvoice"
 }
 ```
 
@@ -136,17 +130,14 @@ Response:
 
 ```json
 {
-    "@odata.context": "https://{{base_url}}/data/$metadata#VendorPaymentJournalHeaders/$entity",
-    "@odata.etag": "W/\"JzEsNjg3MTk1MTE1MTE7MCwwJw==\"",
+    "@odata.context": "https://dev10plus15065719449a0027478devaos.cloudax.dynamics.com/data/$metadata#VendInvoiceJournalHeaders/$entity",
+    "@odata.etag": "W/\"JzEsNjg3MTk1MTIyNjEn\"",
     "dataAreaId": "usmf",
-    "JournalBatchNumber": "00629",
-    "JournalName": "VendPay",
-    "ChargeBearer": 0,
-    "Description": "Vendor Payment",
-    "CategoryPurpose": 0,
+    "JournalBatchNumber": "00631",
+    "JournalName": "APInvoice",
+    "Description": "AP Invoice",
     "IsPosted": "No",
-    "LocalInstrument": 0,
-    "ServiceLevel": 0
+    "SalesTaxIncluded": "No"
 }
 ```
 
@@ -154,7 +145,7 @@ Response:
 
 #### Request for update data
 
-`PATCH : https://{{base_url}}/data/VendorPaymentJournalHeaders(dataAreaId='usmf',JournalBatchNumber='00629')`
+`PATCH : https://{{base_url}}/data/VendInvoiceJournalHeaders(dataAreaId='usmf',JournalBatchNumber='00631')`
 
 <details>
     <summary>
@@ -180,8 +171,8 @@ Host:{{base_url}}
 
 ```json
 {
-    "@odata.type":"#Microsoft.Dynamics.DataEntities.VendorPaymentJournalHeader",
-    "Description": "Vendor Payment upd"
+    "@odata.type":"#Microsoft.Dynamics.DataEntities.VendInvoiceJournalHeader",
+    "Description": "AP Invoice upd"
 }
 ```
 
@@ -222,13 +213,13 @@ Response:
 Status: 204
 </details>
 
-## Lines VendorPaymentJournalLineEntity
+## Lines VendInvoiceJournalLineEntity
 
 | Data entity AOT name           | Entity name (DMF)           | Public collection name (OData) | Support OData | Support DMF | Category | ReadOnly |
 | ------------------------------ | --------------------------- | ------------------------------ | ------------- | ----------- | -------- | -------- |
-| VendorPaymentJournalLineEntity | Vendor payment journal line | VendorPaymentJournalLines      | Yes           | Yes         | Document | No       |
+| VendInvoiceJournalLineEntity | Vendor invoice journal line | VendInvoiceJournalLines      | Yes           | Yes         | Document | No       |
 
-To works with `Vendor payment journal line` we want to use `VendorPaymentJournalLines` entity
+To works with `` we want to use `` entity
 
 ### Key
 

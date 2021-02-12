@@ -1,5 +1,5 @@
 ---
-title: "Works with planned purchase orders"
+title: "Work with planned purchase orders"
 date: 2021-01-10
 tags:
   - ReqPO

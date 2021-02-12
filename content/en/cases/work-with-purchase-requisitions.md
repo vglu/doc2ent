@@ -1,5 +1,5 @@
 ---
-title: "Works with Purchase requisitions"
+title: "Work with Purchase requisitions"
 date: 2021-01-10
 tags:
   - Purchase requisitions

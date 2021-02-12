@@ -1,5 +1,5 @@
 ---
-title: "Works with Currencies"
+title: "Work with Currencies"
 date: 2021-01-13
 tags:
   - Currency

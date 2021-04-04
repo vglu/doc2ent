@@ -1,5 +1,5 @@
 ---
-title: "Work with Vendor payment journals"
+title: "Using Vendor payment journal entities"
 date: 2021-01-15
 tags:
   - Vendor payment journal
@@ -684,12 +684,15 @@ Status: 204
 ## Create Document Vendor Payment Journal
 
 {{% alert title="Warning" color="warning" %}}
-Need to allowed `General ledger\Journal batch number` number sequence be changed by user
+Journal header and lines should be created within a transaction (batch request) and therefore number sequence `General ledger\Journal batch number` should allow user changes:
 
 ALLOW USER CHANGES
 
 - To a lower number = YES
 - To a higher number = YES
+
+![IMG](/cases/work-with-vendor-payment/st222vendpaymjour01.png)
+
 {{% /alert %}}
 
 `POST : https://{{base_url}}/data/$batch`

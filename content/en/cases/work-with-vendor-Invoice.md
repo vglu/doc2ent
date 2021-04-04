@@ -232,8 +232,8 @@ To works with `` we want to use `` entity
 | Field name                      | Value example                            | Description |
 | ------------------------------- | ---------------------------------------- | ----------- |
 | dataAreaId                      | "usmf"                                   |             |
-| JournalBatchNumber              | "00461"                                  |             |
-| LineNumber                      | 1                                        |             |
+| (*)**JournalBatchNumber**       | "00461"                                  |             |
+| (*)**LineNumber**               | 1                                        |             |
 | ItemSalesTaxGroup               | "AU/VI"                                  |             |
 | CashDiscountDate                | "2016-11-01T12:00:00Z"                   |             |
 | Voucher                         | "APIN000001"                             |             |
@@ -294,7 +294,7 @@ To works with `` we want to use `` entity
 | OffsetCompany                   | "usmf"                                   |             |
 | ItemWithholdingTaxGroupCode     | ""                                       |             |
 | TaxExemptNumber                 | ""                                       |             |
-| Currency                        | "USD"                                    |             |
+| (*)**Currency**                 | "USD"                                    |             |
 | Company                         | "usmf"                                   |             |
 | TypeOfOperation                 | "Blank"                                  |             |
 | DeliveryDate                    | "1900-01-01T12:00:00Z"                   |             |

@@ -92,10 +92,10 @@ id = "UA-188030823-1"
     name = "Cases"
     weight = 40
     url = "cases/"
-#[[menu.main]]
-#    name = "Documentation"
-#    weight = 50
-#    url = "docs/"
+# [[menu.main]]
+#     name = "Documentation"
+#     weight = 50
+#     url = "docs/"
 
 
 [params]
@@ -141,7 +141,7 @@ gcs_engine_id = "9683d534e4d40201e"
 offlineSearch = false
 
 # Enable syntax highlighting and copy buttons on code blocks with Prism
-prism_syntax_highlighting = false
+prism_syntax_highlighting = true
 
 # User interface configuration
 [params.ui]

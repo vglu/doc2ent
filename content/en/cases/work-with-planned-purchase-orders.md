@@ -23,7 +23,9 @@ weight: 1
 
 `PlannedOrders` Entity is allowed to operate with planned purchase orders in D365FO.
 
+{{% alert title="Warning" color="warning" %}}
 __ENTITY IS READONLY!__
+{{% /alert %}}
 
 ## Key
 

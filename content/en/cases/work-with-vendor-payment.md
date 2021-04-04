@@ -683,12 +683,14 @@ Status: 204
 
 ## Create Document Vendor Payment Journal
 
+{{% alert title="Warning" color="warning" %}}
 Need to allowed `General ledger\Journal batch number` number sequence be changed by user
 
 ALLOW USER CHANGES
 
 - To a lower number = YES
 - To a higher number = YES
+{{% /alert %}}
 
 `POST : https://{{base_url}}/data/$batch`
 

@@ -687,8 +687,6 @@ Status: 204
 {{% alert title="Warning" color="warning" %}}
 Journal header and lines should be created within a transaction (batch request) and therefore number sequence `General ledger\Journal batch number` should allow user changes:
 
-![IMG](/cases/work-with-vendor-payment/st222vendpaymjour01.png.png)
-
 ![IMG](/cases/work-with-vendor-payment/st222vendpaymjour01.png)
 
 {{% /alert %}}

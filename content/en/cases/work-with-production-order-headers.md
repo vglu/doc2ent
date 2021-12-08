@@ -139,7 +139,7 @@ Response:
 
 ```json
 {
-    "@odata.context": "https://smartbusinessuat.sandbox.operations.dynamics.com/data/$metadata#ProductionOrderHeaders/$entity",
+    "@odata.context": "https://{{base_url}}/data/$metadata#ProductionOrderHeaders/$entity",
     "@odata.etag": "W/\"JzAsMzU2MzcxNjExMTEn\"",
     "dataAreaId": "usmf",
     "ProductionOrderNumber": "P000164",
@@ -266,7 +266,7 @@ Host:{{base_url}}
 
 ```json
 {
-    "@odata.context": "https://smartbusinessuat.sandbox.operations.dynamics.com/data/$metadata#ProductionOrderHeaders/$entity",
+    "@odata.context": "https://{{base_url}}/data/$metadata#ProductionOrderHeaders/$entity",
     "@odata.etag": "W/\"JzEsNjg3MTk0ODAwNjcn\"",
     "dataAreaId": "usmf",
     "ProductionOrderNumber": "P000211",

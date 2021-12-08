@@ -7,6 +7,50 @@ tables:
   - InventSite
 Entities: 
   - OperationalSites
+Relations:
+  - RouteCardProductionJournalEntries
+  - ItemCoverageSettings
+  - SupplyForecastEntries
+  - ItemSpecificBillOfMaterialsHeaders
+  - ItemSpecificBillOfMaterialsHeadersV3
+  - ProductSpecificOrderSettingsV3
+  - OpenSalesPriceJournalLine
+  - AggregatedCostStatementEntries
+  - InventoryCountingJournalLines
+  - BillOfMaterialsHeaders
+  - PurchaseAgreementLinesV2
+  - ProductSpecificOrderSettingsV2
+  - ProductDefaultOrderSettings
+  - ItemArrivalJournalLinesV2
+  - JobCardProductionJournalEntries
+  - RebateAndDeductionsAgreementHeaders
+  - InventoryTagCountingJournalLines
+  - ProductionPickingListJournalEntries
+  - BillOfMaterialsVersionsV3
+  - SalesAgreementConfirmationLines
+  - Warehouses
+  - SalesAgreementLines
+  - CDSInventoryOnHandEntries
+  - OpenPurchasePriceJournalLine
+  - QualityOrderHeaders
+  - PurchaseAgreementLine
+  - CostMontlyStatementEntries
+  - OpenSalesLineDiscountJournalLine
+  - CostStatementEntries
+  - BillOfMaterialsVersionsV2
+  - ReceivingSentProductReleaseHeaders
+  - ReleasingSentProductReleaseHeaders
+  - ItemArrivalJournalHeadersV2
+  - ReceivingReceivedProductReleaseHeaders
+  - ReleasingReceivedProductReleaseHeaders
+  - OpenSalesPostageDiscountJournalLine
+  - ServiceAgreementLines
+  - PendingRouteCostCategoryUnitCosts
+  - ItemSpecificBillOfMaterialsHeadersV2
+  - OpenPurchaseLineDiscountJournalLine
+  - OperationalSiteCurrentPostalAddresses
+  - FiscalEstablishment
+  - ReportAsFinishedProductionJournalEntries
 AXPath: Warehouse management\Setup\Warehouse\Sites
 Operations:
   - Read
@@ -15,6 +59,8 @@ Operations:
   - Delete
 weight: 1
 ---
+
+Navigation path: Warehouse management\Setup\Warehouse\Sites
 
 | Data entity AOT name        | Entity name (DMF) | Public collection name (OData) | Support OData | Support DMF | Category | ReadOnly |
 | --------------------------- | ----------------- | ------------------------------ | ------------- | ----------- | -------- | -------- |
@@ -280,4 +326,100 @@ Host:{{base_url}}
 Response:
 </summary>
 Status: 204
+</details>
+
+## Relation
+
+| Relation name                                   | Data entity AOT name                             | Entity name (DMF)                             | Public collection name (OData)           | Support Odata | Support DMF | Category     | ReadOnly | Notes |
+| ----------------------------------------------- | ------------------------------------------------ | --------------------------------------------- | ---------------------------------------- | ------------- | ----------- | ------------ | -------- | ----- |
+
+### Relation usecase
+
+Request `GET: https://{{base_url}}/data/OperationalSites(dataAreaId='usmf',SiteId='1')/ItemCoverageSettings?$filter=ItemNumber eq 'D0001'&$count=true` return 1 records from Item Coverage Settings where Site = '1' and Item number = 'D0001'
+
+<details>
+    <summary>
+    Header:
+    </summary>
+
+```json
+OData-Version:4.0
+OData-MaxVersion:4.0
+Content-Type:application/json;odata.metadata=minimal
+Accept:application/json;odata.metadata=minimal
+Accept-Charset:UTF-8
+Authorization:Bearer {{token}}
+Host:{{base_url}}
+```
+
+</details>
+
+<details>
+<summary>
+Response:
+</summary>
+
+```json
+{
+    "@odata.context": "https://{{base_url}}/data/$metadata#ItemCoverageSettings",
+    "@odata.count": 1,
+    "value": [
+        {
+            "@odata.etag": "W/\"JzAsMjI1NjU0MjE5NDQn\"",
+            "dataAreaId": "usmf",
+            "ItemNumber": "D0001",
+            "CoverageWarehouseLocationId": "",
+            "CoverageItemBatchNumber": "",
+            "CoverageProductColorId": "",
+            "CoverageProductSizeId": "",
+            "CoverageProductStyleId": "",
+            "CoverageWarehouseId": "",
+            "CoverageItemSerialNumber": "",
+            "CoverageSiteId": "1",
+            "CoverageInventoryStatusId": "",
+            "CoverageProductConfigurationId": "",
+            "CoveragePeriodDays": 1,
+            "VendorAccountNumber": "US-101",
+            "ApprovedRequisitionTimeFenceDays": 0,
+            "LastPlanningFormulaPriorityChangedDate": "1900-01-01T12:00:00Z",
+            "ProcurementLeadTimeDays": 0,
+            "DefaultPlanningFormulaPriority": 99,
+            "IsProcurementLeadTimeOverridden": "No",
+            "AutomaticFirmingTimeFenceDays": 0,
+            "IsConsumeOnHandOverridden": "No",
+            "ProductionLeadTimeDays": 0,
+            "MinimumOnHandFulfillmentMethod": "TodaysDate",
+            "PlanningFormulaItemNumber": "",
+            "MaximumOnHandInventoryQuantity": 0,
+            "AreTimeFencesOverridden": "No",
+            "FreezeTimeFenceDays": 0,
+            "IsTransferLeadTimeOverridden": "No",
+            "CapacitySchedulingTimeFenceDays": 100,
+            "NegativeDays": 2,
+            "MinimumOnHandInventoryQuantity": 0,
+            "MaximumOnHandInventorySafetyKeyId": "",
+            "PositiveDays": 100,
+            "CoverageTimeFenceDays": 100,
+            "CurrentPlanningFormulaPriority": 99,
+            "ProductCoverageGroupId": "Req",
+            "MinimumOnHandInventorySafetyKeyId": "",
+            "AreCoverageGroupSettingsOverridden": "No",
+            "IsTransferLeadTimeUsingWorkingDays": "Yes",
+            "IsProcumentLeadTimeUsingWorkingDays": "No",
+            "BOMOrFormulaExplosionTimeFenceDays": 100,
+            "AreGeneralSettingsOverridden": "No",
+            "DefaultPlannedTransferOrderFromWarehouseId": "",
+            "CoverageMethod": "Req",
+            "ConsumeOnHandInventoryMethod": "BeforeAllOtherSupply",
+            "TransferLeadTimeDays": 0,
+            "PlannedOrderType": "Production",
+            "IsPlannedOrderTypeOverridden": "No",
+            "IsProductionLeadTimeOverridden": "No",
+            "IsProductionLeadTimeUsingWorkingDays": "No",
+            "IsMinimumOnHandSafetyPeriodUsed": "No"
+        }
+    ]
+}
+```
+
 </details>

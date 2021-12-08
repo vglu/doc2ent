@@ -95,7 +95,7 @@ Response:
 
 ```json
 {
-    "@odata.context": "https://smartbusinessuat.sandbox.operations.dynamics.com/data/$metadata#ReportAsFinishedProductionJournalEntries/$entity",
+    "@odata.context": "https://{{base_url}}/data/$metadata#ReportAsFinishedProductionJournalEntries/$entity",
     "@odata.etag": "W/\"JzAsNTYzNzE0NDU3Nic=\"",
     "dataAreaId": "usmf",
     "JournalNumber": "00017",
@@ -182,7 +182,7 @@ Host:{{base_url}}
 
 ```json
 {
-    "@odata.context": "https://smartbusinessuat.sandbox.operations.dynamics.com/data/$metadata#ReportAsFinishedProductionJournalEntries/$entity",
+    "@odata.context": "https://{{base_url}}/data/$metadata#ReportAsFinishedProductionJournalEntries/$entity",
     "@odata.etag": "W/\"JzEsNjg3MTk0Nzg2NjMn\"",
     "dataAreaId": "usmf",
     "JournalNumber": "00935",

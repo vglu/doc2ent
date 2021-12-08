@@ -12,3 +12,4 @@
   HUGO_VERSION = "0.78.2"
   HUGO_THEME = "docsy"
   HUGO_ENV = "production"
+  NODE_VERSION = "14.18"
